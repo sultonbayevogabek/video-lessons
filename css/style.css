@@ -2,6 +2,7 @@
 
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *, *::after, *::before {
@@ -42,6 +43,11 @@ img {
 
 .section {
     padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.section--white {
+    background-color: #FFFFFF;
 }
 
 .section__heading {
@@ -111,8 +117,24 @@ img {
     background-color: #3CB27F;
 }
 
+.bg-yellow {
+    background-color: #FFDB20;
+}
+
 .bg-linear {
     background: linear-gradient(90.44deg, #B840E2 0.14%, #594EDB 102.63%), #3CB27F;
+}
+
+.skeleton {
+    background: linear-gradient(110deg, #FBFCFC 8%, #ffffff 18%, #FBFCFC 33%);
+    background-size: 200% 100%;
+    animation: 1.5s shine linear infinite;
+}
+
+@keyframes shine {
+    to {
+        background-position-x: -200%;
+    }
 }
 
 .header {
@@ -254,8 +276,6 @@ img {
 
 .course-for {
     padding-top: 90px;
-    padding-bottom: 60px;
-    background-color: #FFFFFF;
 }
 
 .course-for .section__heading {
@@ -291,6 +311,10 @@ img {
 .course-for__text {
     font-size: 18px;
     line-height: 140%;
+}
+
+.course-process {
+    padding-bottom: 0;
 }
 
 .course-process__inner {
@@ -394,6 +418,7 @@ img {
     transform-origin: center;
     transition: 0.2s all linear;
 }
+
 .accordion__icon::before {
     display: block;
     position: absolute;
@@ -405,6 +430,7 @@ img {
     border-radius: 1.5px;
     background: currentColor;
 }
+
 .accordion__icon::after {
     display: block;
     position: absolute;
@@ -454,10 +480,6 @@ img {
     color: #3CB27F;
 }
 
-.course-projects {
-    background-color: #FFFFFF;
-}
-
 .course-projects__cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -481,4 +503,107 @@ img {
 .course-projects__img img {
     width: 100%;
     object-fit: cover;
+}
+
+.course-projects__title {
+    padding-top: 18px;
+    font-size: 18px;
+    line-height: 140%;
+    color: #000000;
+}
+
+.course-projects__text {
+    padding-top: 18px;
+    font-size: 16px;
+    line-height: 140%;
+    color: #839292;
+}
+
+.course-results {
+    padding-bottom: 47px;
+}
+
+.course-results__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.course-results__inner .info__item {
+    margin-bottom: 13px;
+    padding: 18px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 18px #EAF7F7;
+    border-radius: 18px;
+}
+
+.mentor__inner {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    grid-gap: 70px;
+    align-items: center;
+}
+
+.mentor__img {
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow-x: hidden;
+}
+
+.mentor__img img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.mentor__info .section__heading {
+    margin-bottom: 15px;
+}
+
+.mentor__subtitle {
+    margin-bottom: 5px;
+    font-size: 18px;
+    line-height: 130%;
+    color: #657474;
+}
+
+.mentor__experience {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mentor__experience div {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    border: 1px solid #3CB27F;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.mentor__experience p {
+    font-size: 18px;
+    line-height: 130%;
+    color: #657474;
+}
+
+.mentor__info .info {
+    padding-top: 40px;
+}
+
+.mentor__info .info__item {
+    padding: 18px;
+    background-color: #FBFCFC;
+    border-radius: 8px;
+}
+
+.mentor__info .info__item:not(:last-child) {
+    margin-bottom: 14px;
+}
+
+.salaries__inner {
+    display: grid;
+    grid-template-columns: 1.32fr 1fr;
 }
