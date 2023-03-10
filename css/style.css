@@ -739,6 +739,7 @@ img {
 
 .price__left img {
     display: block;
+    width: 80%;
     margin: 0 auto 18px;
 }
 
@@ -762,8 +763,8 @@ img {
 .more__heading {
     position: absolute;
     top: 0;
-    left: 0;
-    transform: translate(50%, -50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: max-content;
     margin: 0;
     padding: 8px 25px;
@@ -1013,6 +1014,66 @@ img {
     .course-projects__title {
         padding-top: 16px;
         font-size: 16px;
+    }
+
+    .mentor__subtitle {
+        font-size: 16px;
+    }
+
+    .mentor__experience p {
+        font-size: 16px;
+    }
+
+    .salaries__left p {
+        font-size: 16px;
+    }
+
+    .salaries__level div {
+        font-size: 16px;
+    }
+
+    .salaries__value {
+        font-size: 16px;
+    }
+
+    .feedback__name {
+        font-size: 16px;
+    }
+
+    .feedback__text {
+        font-size: 14px;
+    }
+
+    .price__inner {
+        padding: 40px;
+    }
+
+    .price__heading {
+        font-size: 24px;
+    }
+
+    .price__left p {
+        font-size: 16px;
+    }
+
+    .discount__heading {
+        font-size: 16px;
+    }
+
+    .more {
+        padding: 24px 20px 6px
+    }
+
+    .discount__info {
+        padding: 18px;
+    }
+
+    .discount__numbers {
+        font-size: 16px;
+    }
+
+    .discount__numbers strong {
+        font-size: 20px;
     }
 }
 
