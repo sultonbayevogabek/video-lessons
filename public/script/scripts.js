@@ -33,4 +33,19 @@ document.addEventListener('DOMContentLoaded', () => {
    }
 
    items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+   const menu = document.querySelector('#menu'),
+      menuOpenBtn = document.querySelector('#menu-open'),
+      menuCloseBtn = document.querySelector('#menu-close')
+
+   let backdrop = document.createElement('div')
+   backdrop.classList.add('backdrop')
+
+   function openMenu() {
+      document.body.style.overflow = 'hidden';
+      document.body.append(backdrop)
+      menu.style.right = '0';
+   }
+
+   menuOpenBtn.addEventListener('click', openMenu)
 })
