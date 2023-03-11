@@ -18,6 +18,9 @@
             </a>
 
             <nav class="header__nav">
+                <div class="icon-disc bg-linear">
+                    <img src="img/icons/close.svg" alt="close svg">
+                </div>
                 <ul class="header__ul">
                     <li class="header__li">
                         <a href="#who-is-the-course-for">Kurs kimlar uchun</a>
@@ -29,13 +32,19 @@
                         <a href="#course-projects">Bajariladigan loyihalar</a>
                     </li>
                     <li class="header__li">
-                        <a href="#faq">Ko’p beriladigan savollar</a>
+                        <a href="#faq">Ko'p beriladigan savollar</a>
                     </li>
                 </ul>
             </nav>
 
             <button class="button bg-green">
                 Kursga yozilish
+            </button>
+
+            <button class="button bg-green hamburger">
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
             </button>
         </div>
     </div>
@@ -194,7 +203,7 @@
                         <h3 class="accordion__title">Why is the moon sometimes out during the day?</h3>
                     </div>
 
-                    <span class="accordion__icon" aria-hidden="true"></span>
+                    <img class="accordion__icon" src="img/icons/plus.svg" alt="plus icon">
                 </div>
                 <div class="accordion__content">
                     <div class="accordion__topic">
@@ -218,14 +227,14 @@
             <div class="accordion__item">
                 <div class="accordion__header" aria-expanded="false">
                     <div class="accordion__number">
-                        2
+                        1
                     </div>
                     <div class="accordion__info">
                         <div class="accordion__date">1-hafta</div>
                         <h3 class="accordion__title">Why is the moon sometimes out during the day?</h3>
                     </div>
 
-                    <span class="accordion__icon" aria-hidden="true"></span>
+                    <img class="accordion__icon" src="img/icons/plus.svg" alt="plus icon">
                 </div>
                 <div class="accordion__content">
                     <div class="accordion__topic">
@@ -249,14 +258,14 @@
             <div class="accordion__item">
                 <div class="accordion__header" aria-expanded="false">
                     <div class="accordion__number">
-                        3
+                        1
                     </div>
                     <div class="accordion__info">
                         <div class="accordion__date">1-hafta</div>
                         <h3 class="accordion__title">Why is the moon sometimes out during the day?</h3>
                     </div>
 
-                    <span class="accordion__icon" aria-hidden="true"></span>
+                    <img class="accordion__icon" src="img/icons/plus.svg" alt="plus icon">
                 </div>
                 <div class="accordion__content">
                     <div class="accordion__topic">
@@ -596,7 +605,7 @@
     </div>
 </section>
 
-<section class="section section--white faq">
+<section class="section section--white faq" id="faq">
     <div class="container">
         <h2 class="section__heading">Ko'p beriladigan <span class="text-green">savollar</span></h2>
 
@@ -610,7 +619,7 @@
                         <h3 class="accordion__title">Why is the moon sometimes out during the day?</h3>
                     </div>
 
-                    <span class="accordion__icon" aria-hidden="true"></span>
+                    <img class="accordion__icon" src="img/icons/plus.svg" alt="plus icon">
                 </div>
                 <div class="accordion__content">
                     <div class="accordion__topic">
@@ -627,7 +636,7 @@
                         <h3 class="accordion__title">Why is the moon sometimes out during the day?</h3>
                     </div>
 
-                    <span class="accordion__icon" aria-hidden="true"></span>
+                    <img class="accordion__icon" src="img/icons/plus.svg" alt="plus icon">
                 </div>
                 <div class="accordion__content">
                     <div class="accordion__topic">
@@ -644,7 +653,7 @@
                         <h3 class="accordion__title">Why is the moon sometimes out during the day?</h3>
                     </div>
 
-                    <span class="accordion__icon" aria-hidden="true"></span>
+                    <img class="accordion__icon" src="img/icons/plus.svg" alt="plus icon">
                 </div>
                 <div class="accordion__content">
                     <div class="accordion__topic">
@@ -661,24 +670,7 @@
                         <h3 class="accordion__title">Why is the moon sometimes out during the day?</h3>
                     </div>
 
-                    <span class="accordion__icon" aria-hidden="true"></span>
-                </div>
-                <div class="accordion__content">
-                    <div class="accordion__topic">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion__item">
-                <div class="accordion__header" aria-expanded="false">
-                    <div class="accordion__number">
-                        ?
-                    </div>
-                    <div class="accordion__info">
-                        <h3 class="accordion__title">Why is the moon sometimes out during the day?</h3>
-                    </div>
-
-                    <span class="accordion__icon" aria-hidden="true"></span>
+                    <img class="accordion__icon" src="img/icons/plus.svg" alt="plus icon">
                 </div>
                 <div class="accordion__content">
                     <div class="accordion__topic">
@@ -693,7 +685,7 @@
 <footer class="footer">
     <div class="container">
         <div class="footer__inner">
-            <img src="img/logo.svg" alt="Fulfil logo">
+            <img class="footer__logo" src="img/logo.svg" alt="Fulfil logo">
             <p>Copyright © 2022 Fulfil Inc. All rights reserved.</p>
             <div class="footer__socials">
                 <p>Ijtimoiy tarmoqlar:</p>
