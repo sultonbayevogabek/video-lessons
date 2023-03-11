@@ -1095,6 +1095,10 @@ img {
         display: flex;
     }
 
+    .hamburger {
+        display: flex;
+    }
+
     .intro__inner {
         display: block;
     }

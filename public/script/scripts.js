@@ -43,9 +43,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
    function openMenu() {
       document.body.style.overflow = 'hidden';
-      document.body.append(backdrop)
       menu.style.right = '0';
+
+      setTimeout(() => {
+         document.body.append(backdrop)
+      }, 100)
+   }
+
+   function closeMenu() {
+      document.body.style.overflow = '';
+      menu.style.right = '-100vh';
+
+      setTimeout(() => {
+         document.body.removeChild(backdrop)
+      }, 400)
    }
 
    menuOpenBtn.addEventListener('click', openMenu)
+   menuCloseBtn.addEventListener('click', closeMenu)
+   backdrop.addEventListener('click', closeMenu)
 })
