@@ -94,24 +94,6 @@ img {
     outline: 1px solid #B840E2;
 }
 
-.hamburger {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.hamburger__line {
-    width: 30px;
-    height: 2px;
-    border-radius: 1.5px;
-    background-color: #FFFFFF;
-}
-
-.hamburger__line:not(:last-child) {
-    margin-bottom: 4px;
-}
-
 .text-green {
     color: #3CB27F;
 }
@@ -259,7 +241,7 @@ img {
     width: 102vw;
     height: 50px;
     transform: rotate(-2.6deg) translateY(-1px);
-    background-color: #3CB27F;
+    background-color: #378C67;
     overflow: hidden;
 }
 
@@ -426,8 +408,39 @@ img {
     position: absolute;
     top: 28px;
     right: 24px;
+    width: 22px;
+    height: 22px;
+    color: #3CB27F;
     transform-origin: center;
     transition: 0.2s all linear;
+}
+
+.accordion__icon::before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 8.5px;
+    left: -1.5px;
+    width: 22px;
+    height: 3px;
+    border-radius: 1.5px;
+    background: currentColor;
+}
+
+.accordion__icon::after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: -1px;
+    left: 8px;
+    width: 3px;
+    height: 22px;
+    border-radius: 1.5px;
+    background: currentColor;
+}
+
+.accordion__header[aria-expanded=true] .accordion__icon {
+    color: #657474;
 }
 
 .accordion__header[aria-expanded=true] .accordion__icon {
@@ -912,8 +925,16 @@ img {
         padding: 16px;
     }
 
+    .intro__card p {
+        font-size: 16px;
+    }
+
     .ticker__line {
         height: 45px;
+    }
+
+    .ticker__item {
+        font-size: 16px;
     }
 
     .course-for {
@@ -931,8 +952,16 @@ img {
         padding: 10px;
     }
 
+    .course-for__text {
+        font-size: 16px;
+    }
+
     .course-process__left {
         padding: 40px 0 40px 40px;
+    }
+
+    .info__item {
+        font-size: 16px;
     }
 
     .accordion__header {
@@ -953,6 +982,7 @@ img {
 
     .accordion__title {
         padding-top: 2px;
+        font-size: 16px;
     }
 
     .accordion__icon {
@@ -960,6 +990,17 @@ img {
         height: 20px;
         top: 20px;
         right: 20px;
+    }
+
+    .accordion__icon::before {
+        left: 0;
+        width: 20px;
+    }
+
+    .accordion__icon::after {
+        top: 0;
+        left: 8.5px;
+        height: 20px;
     }
 
     .accordion__topic {
@@ -972,6 +1013,31 @@ img {
 
     .course-projects__title {
         padding-top: 16px;
+        font-size: 16px;
+    }
+
+    .mentor__subtitle {
+        font-size: 16px;
+    }
+
+    .mentor__experience p {
+        font-size: 16px;
+    }
+
+    .salaries__left p {
+        font-size: 16px;
+    }
+
+    .salaries__level div {
+        font-size: 16px;
+    }
+
+    .salaries__value {
+        font-size: 16px;
+    }
+
+    .feedback__name {
+        font-size: 16px;
     }
 
     .feedback__text {
@@ -986,21 +1052,11 @@ img {
         font-size: 24px;
     }
 
-    .ticker__item,
-    .intro__card p,
-    .course-for__text,
-    .info__item,
-    .course-projects__title,
-    .mentor__subtitle,
-    .mentor__experience p,
-    .salaries__left p,
-    .salaries__level div,
-    .salaries__value,
-    .feedback__name,
-    .price__left p,
-    .discount__heading,
-    .discount__numbers,
-    .accordion__title {
+    .price__left p {
+        font-size: 16px;
+    }
+
+    .discount__heading {
         font-size: 16px;
     }
 
@@ -1012,63 +1068,17 @@ img {
         padding: 18px;
     }
 
+    .discount__numbers {
+        font-size: 16px;
+    }
+
     .discount__numbers strong {
         font-size: 20px;
     }
-
-    .footer__logo {
-        width: 70px;
-    }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
     .container {
         max-width: 1000px;
-    }
-}
-
-@media screen and (max-width: 1060px) {
-    .container {
-        max-width: 900px;
-    }
-
-    .header__nav {
-        position: fixed;
-        top: 0;
-        right: 0;
-        z-index: 2;
-        width: 300px;
-        height: 100vh;
-        padding: 10px 20px;
-        background-color: #FFFFFF;
-        overflow-y: auto;
-        overflow-x: hidden;
-    }
-
-    .header__nav .icon-disc {
-        margin-left: auto;
-        margin-right: 0;
-        padding: 10px;
-    }
-
-    .header__ul {
-        display: block;
-    }
-
-    .header__li {
-        padding: 16px 4px;
-    }
-
-    .header__li:not(:last-child) {
-        margin-right: 0;
-        border-bottom: 1px solid #BAC5C5;
-    }
-
-    .intro__inner {
-        display: block;
-    }
-
-    .intro__right {
-        display: none;
     }
 }
