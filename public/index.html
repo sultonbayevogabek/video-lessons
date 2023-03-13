@@ -17,10 +17,7 @@
                 <img src="img/logo.svg" alt="Fulfil logo">
             </a>
 
-            <nav class="header__nav" id="menu">
-                <button id="menu-close">
-                    <img src="img/icons/close.svg" alt="close svg">
-                </button>
+            <nav class="header__nav">
                 <ul class="header__ul">
                     <li class="header__li">
                         <a href="#who-is-the-course-for">Kurs kimlar uchun</a>
@@ -37,15 +34,17 @@
                 </ul>
             </nav>
 
-            <button class="button bg-green">
-                Kursga yozilish
-            </button>
+            <div class="header__buttons">
+                <button class="button bg-green">
+                    Kursga yozilish
+                </button>
 
-            <button class="button bg-green hamburger" id="menu-open">
-                <span class="hamburger__line"></span>
-                <span class="hamburger__line"></span>
-                <span class="hamburger__line"></span>
-            </button>
+                <button class="button bg-green hamburger" id="mobile-menu-open">
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                </button>
+            </div>
         </div>
     </div>
 </header>
@@ -708,6 +707,26 @@
         </div>
     </div>
 </footer>
+
+<nav class="mobile-menu" id="mobile-menu">
+    <button class="icon-disc bg-linear" id="mobile-menu-close">
+        <img src="img/icons/close.svg" alt="close svg">
+    </button>
+    <ul class="mobile-menu__ul">
+        <li class="mobile-menu__li">
+            <a href="#who-is-the-course-for">Kurs kimlar uchun</a>
+        </li>
+        <li class="mobile-menu__li">
+            <a href="#course-plan">Kurs rejasi</a>
+        </li>
+        <li class="mobile-menu__li">
+            <a href="#course-projects">Bajariladigan loyihalar</a>
+        </li>
+        <li class="mobile-menu__li">
+            <a href="#faq">Ko'p beriladigan savollar</a>
+        </li>
+    </ul>
+</nav>
 
 <script src="script/scripts.js"></script>
 </body>
