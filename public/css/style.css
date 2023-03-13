@@ -1100,6 +1100,11 @@ img {
     .container {
         max-width: 900px;
     }
+
+    .section {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
     
     .header {
         position: sticky;
@@ -1130,5 +1135,23 @@ img {
 
     .intro__right {
         display: none;
+    }
+
+    .intro__heading {
+        font-size: 40px;
+    }
+
+    .intro__heading img {
+        width: 50px;
+    }
+
+    .intro__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .intro__card {
+        margin-bottom: 0;
     }
 }
