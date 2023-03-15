@@ -1105,7 +1105,7 @@ img {
         padding-top: 20px;
         padding-bottom: 20px;
     }
-    
+
     .header {
         position: sticky;
         z-index: 2;
@@ -1153,5 +1153,40 @@ img {
 
     .intro__card {
         margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .container {
+        max-width: 800px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .intro__text {
+        margin-bottom: 24px;
+    }
+
+    .intro__cards {
+        grid-template-columns: 1fr;
+    }
+
+    .intro__card {
+        justify-content: space-between;
+    }
+
+    .intro__card p {
+        order: -1;
+    }
+
+    .intro__card .icon-disc {
+        margin-right: 0;
+        margin-left: 12px;
     }
 }
