@@ -80,6 +80,7 @@ img {
     border: none;
     outline-offset: 1px;
     transition: 0.05s all ease;
+    white-space: nowrap;
 }
 
 .button:hover {
@@ -883,7 +884,7 @@ img {
     padding: 10px;
     background-color: #fff;
     overflow: auto;
-    transition: 0.5s all ease-out;
+    transition: 0.3s all ease-out;
 }
 
 #mobile-menu-close {
@@ -1164,11 +1165,31 @@ img {
     .container {
         max-width: 800px;
     }
+
+    .course-process__inner {
+        grid-template-columns: 1fr;
+    }
+
+    .course-process__left {
+        padding: 24px 32px;
+    }
+
+    .course-process__img {
+        display: none;
+    }
+
+    .course-process__left .info__item:not(:last-child) {
+        margin-bottom: 16px;
+    }
 }
 
 @media screen and (max-width: 850px) {
     .container {
         max-width: 720px;
+    }
+
+    .course-projects__cards {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -1211,5 +1232,37 @@ img {
 
     .course-for__card {
         padding: 12px;
+    }
+
+    .course-process__left {
+        padding: 16px;
+    }
+
+    .accordion__item:not(:last-child) {
+        margin-bottom: 12px;
+    }
+
+    .course-projects__cards {
+        grid-gap: 12px;
+    }
+
+    .course-projects__card {
+        padding: 12px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .course-projects__cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .section__footer {
+        flex-wrap: wrap;
+    }
+
+    .section__footer p {
+        margin-bottom: 12px;
     }
 }
