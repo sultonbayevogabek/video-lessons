@@ -1154,6 +1154,10 @@ img {
     .intro__card {
         margin-bottom: 0;
     }
+
+    .course-for {
+        padding-top: 60px;
+    }
 }
 
 @media screen and (max-width: 970px) {
@@ -1194,5 +1198,14 @@ img {
     .intro__card .icon-disc {
         margin-right: 0;
         margin-left: 12px;
+    }
+
+    .section__heading {
+        font-size: 32px;
+    }
+
+    .course-for__cards {
+        grid-template-columns: 1fr;
+        grid-gap: 12px;
     }
 }
