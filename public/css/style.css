@@ -416,6 +416,7 @@ img {
 }
 
 .accordion__number {
+    flex-shrink: 0;
     width: 47px;
     height: 47px;
     margin-right: 16px;
@@ -431,6 +432,7 @@ img {
 .accordion__info {
     flex-grow: 1;
     padding-top: 4px;
+    padding-right: 40px;
 }
 
 .accordion__date {
@@ -1159,6 +1161,10 @@ img {
     .course-for {
         padding-top: 60px;
     }
+
+    .mentor__inner {
+        align-items: start;
+    }
 }
 
 @media screen and (max-width: 970px) {
@@ -1194,6 +1200,12 @@ img {
 }
 
 @media screen and (max-width: 720px) {
+    .icon-disc {
+        width: 30px;
+        height: 30px;
+        margin-right: 12px;
+        padding: 5px;
+    }
     .intro__heading {
         font-size: 36px;
         margin-bottom: 12px;
@@ -1247,6 +1259,19 @@ img {
     }
 
     .course-projects__card {
+        padding: 12px;
+    }
+
+    .accordion__header {
+        padding: 12px;
+    }
+
+    .course-results__inner {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    }
+
+    .course-results__inner .info__item {
         padding: 12px;
     }
 }
