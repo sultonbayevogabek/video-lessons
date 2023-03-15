@@ -1164,6 +1164,7 @@ img {
 
     .mentor__inner {
         align-items: start;
+        grid-gap: 40px;
     }
 }
 
@@ -1186,6 +1187,33 @@ img {
 
     .course-process__left .info__item:not(:last-child) {
         margin-bottom: 16px;
+    }
+
+    .mentor__inner {
+        grid-template-columns: 1fr;
+        grid-gap: 16px;
+    }
+
+    .mentor__img {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .mentor__subtitle {
+        text-align: center;
+    }
+
+    .mentor__info .section__heading {
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .mentor__experience {
+        justify-content: center;
+    }
+
+    .mentor__info .info {
+        padding-top: 20px;
     }
 }
 
@@ -1273,6 +1301,14 @@ img {
 
     .course-results__inner .info__item {
         padding: 12px;
+    }
+
+    .mentor__info .info__item {
+        padding: 12px;
+    }
+
+    .mentor__info .info__item:not(:last-child) {
+        margin-bottom: 12px;
     }
 }
 
