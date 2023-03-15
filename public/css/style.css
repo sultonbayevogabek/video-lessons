@@ -1215,6 +1215,11 @@ img {
     .mentor__info .info {
         padding-top: 20px;
     }
+
+    .salaries__inner {
+        grid-template-columns: 1fr;
+        grid-gap: 16px;
+    }
 }
 
 @media screen and (max-width: 850px) {
