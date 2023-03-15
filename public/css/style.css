@@ -1230,6 +1230,10 @@ img {
     .course-projects__cards {
         grid-template-columns: 1fr 1fr;
     }
+
+    .feedback__cards {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media screen and (max-width: 720px) {
@@ -1314,6 +1318,10 @@ img {
 
     .mentor__info .info__item:not(:last-child) {
         margin-bottom: 12px;
+    }
+
+    .feedback__cards {
+        grid-gap: 12px;
     }
 }
 
