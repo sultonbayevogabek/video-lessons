@@ -1208,4 +1208,8 @@ img {
         grid-template-columns: 1fr;
         grid-gap: 12px;
     }
+
+    .course-for__card {
+        padding: 12px;
+    }
 }
