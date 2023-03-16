@@ -1166,6 +1166,14 @@ img {
         align-items: start;
         grid-gap: 40px;
     }
+
+    .price__heading {
+        margin-bottom: 18px;
+    }
+
+    .price__right .price__heading {
+        margin-bottom: 30px;
+    }
 }
 
 @media screen and (max-width: 970px) {
@@ -1219,6 +1227,10 @@ img {
     .salaries__inner {
         grid-template-columns: 1fr;
         grid-gap: 16px;
+    }
+
+    .price__inner {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -1323,10 +1335,18 @@ img {
     .feedback__cards {
         grid-gap: 12px;
     }
+
+    .feedback__card {
+        padding: 12px;
+    }
 }
 
 @media screen and (max-width: 560px) {
     .course-projects__cards {
+        grid-template-columns: 1fr;
+    }
+
+    .feedback__cards {
         grid-template-columns: 1fr;
     }
 }
