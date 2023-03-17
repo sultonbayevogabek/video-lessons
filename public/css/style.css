@@ -859,6 +859,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding-top: 28px;
     padding-bottom: 20px;
     color: #91A19B;
@@ -1231,6 +1232,16 @@ img {
 
     .price__inner {
         grid-template-columns: 1fr;
+        grid-gap: 24px;
+    }
+
+    .footer__inner {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .footer__inner p {
+        display: none;
     }
 }
 
@@ -1255,6 +1266,7 @@ img {
         margin-right: 12px;
         padding: 5px;
     }
+
     .intro__heading {
         font-size: 36px;
         margin-bottom: 12px;
@@ -1339,6 +1351,22 @@ img {
     .feedback__card {
         padding: 12px;
     }
+
+    .price__inner {
+        padding: 24px 32px;
+    }
+
+    .more {
+        margin-bottom: 20px;
+    }
+
+    .more__heading {
+        font-size: 14px;
+    }
+
+    .discount__info {
+        padding: 12px;
+    }
 }
 
 @media screen and (max-width: 560px) {
@@ -1349,13 +1377,22 @@ img {
     .feedback__cards {
         grid-template-columns: 1fr;
     }
+
+    .more__li {
+        align-items: flex-start;
+    }
+
+    .more__li div:nth-child(2) {
+        margin-left: 20px;
+        white-space: nowrap;
+    }
+
+    .price__inner {
+        padding: 24px 16px;
+    }
 }
 
 @media screen and (max-width: 450px) {
-    .section__footer {
-        flex-wrap: wrap;
-    }
-
     .section__footer p {
         margin-bottom: 12px;
     }
