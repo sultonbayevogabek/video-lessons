@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const scrollbarWidth = window.innerWidth - document.body.clientWidth;
     function drawTickerBg() {
         const tickerBg = document.querySelector('.ticker__bg');
         const width = window.innerWidth;
@@ -69,16 +70,22 @@ document.addEventListener('DOMContentLoaded', () => {
     enrollCourseButtons.forEach(button => {
         button.addEventListener('click', () => {
             enrollCourseForm.classList.add('open');
+            document.body.style.overflow = 'hidden';
+            document.body.style.paddingRight = scrollbarWidth + 'px';
         })
     })
 
     enrollCourseForm.addEventListener('click', () => {
         enrollCourseForm.classList.remove('open');
+        document.body.style.overflow = '';
+        document.body.style.paddingRight = '0';
     })
 
     document.addEventListener('keyup', e => {
         if (e.key === 'Escape') {
             enrollCourseForm.classList.remove('open');
+            document.body.style.overflow = '';
+            document.body.style.paddingRight = '0';
         }
     })
 })
