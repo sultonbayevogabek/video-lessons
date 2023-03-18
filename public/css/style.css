@@ -928,15 +928,21 @@ img {
     bottom: 0;
     left: 0;
     z-index: 3;
+    display: none;
+    align-items: center;
+    justify-content: center;
     background-color: rgba(0, 0, 0, 0.3);
-    padding: 30px;
+    padding: 20px;
+}
+
+.enroll-backdrop.open {
+    display: flex;
 }
 
 .enroll-content {
     max-width: 100%;
     width: 500px;
-    margin: 100px auto;
-    overflow: auto;
+    height: 100%;
 }
 
 @media screen and (min-width: 1536px) {

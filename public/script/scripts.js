@@ -63,4 +63,22 @@ document.addEventListener('DOMContentLoaded', () => {
     menuLinks.forEach(a => {
         a.addEventListener('click', closeMenu)
     })
+
+    const enrollCourseButtons = document.querySelectorAll('.enroll-course'),
+        enrollCourseForm = document.querySelector('.enroll-backdrop')
+    enrollCourseButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            enrollCourseForm.classList.add('open');
+        })
+    })
+
+    enrollCourseForm.addEventListener('click', () => {
+        enrollCourseForm.classList.remove('open');
+    })
+
+    document.addEventListener('keyup', e => {
+        if (e.key === 'Escape') {
+            enrollCourseForm.classList.remove('open');
+        }
+    })
 })
