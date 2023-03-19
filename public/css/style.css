@@ -923,12 +923,12 @@ img {
 
 .enroll-backdrop {
     position: fixed;
-    top: 0;
+    top: -100vh;
     right: 0;
-    bottom: 0;
+    height: 100vh;
     left: 0;
     z-index: 3;
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.3);
@@ -936,7 +936,7 @@ img {
 }
 
 .enroll-backdrop.open {
-    display: flex;
+    top: 0;
 }
 
 .enroll-content {
