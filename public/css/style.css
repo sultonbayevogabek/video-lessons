@@ -923,7 +923,7 @@ img {
 
 .enroll-backdrop {
     position: fixed;
-    top: -100vh;
+    top: -1000vh;
     right: 0;
     height: 100vh;
     left: 0;
