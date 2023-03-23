@@ -949,7 +949,7 @@ img {
 
 .enroll-loading {
     position: absolute;
-    top: 50%;
+    top: 200px;
     left: 50%;
     max-width: 300px;
     text-align: center;
