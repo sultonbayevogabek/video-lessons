@@ -480,11 +480,12 @@ img {
 
 .accordion__topic p {
     flex-grow: 1;
-    margin-right: 50px;
     line-height: 120%;
 }
 
 .accordion__topic span {
+    display: block;
+    width: 70px;
     flex-shrink: 0;
     line-height: 120%;
     color: #3CB27F;
