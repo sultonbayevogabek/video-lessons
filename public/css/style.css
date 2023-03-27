@@ -462,7 +462,7 @@ img {
 }
 
 .accordion__header[aria-expanded=true] + .accordion__content {
-    max-height: 1000px;
+    max-height: 2000px;
     transition: 600ms all linear;
 }
 
