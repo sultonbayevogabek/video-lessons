@@ -1,4 +1,209 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const feedbacks = [
+        {
+            author: `Nurbek`,
+            text: `Assalomu alaykum. Men Fulfil Educationga grand taqdim qilgani uchun 
+            rahmat aytaman. Bundan keyingi ishlarida omad tilayman.`
+        },
+        {
+            author: `Javlonbek Xabibullayev`,
+            text: `Darslar sifati a'lo, maydalab tushuntirilgan. Ustozning ham dars o'tishlari ajoyib. Maydalab, donalab tushuntirib o'tganlar.  Alloh rozi bo'lsin.`
+        },
+        {
+            author: `Mujgan`,
+            text: `Frontend kursi juda ham tushunarli qilib tushuntirilgan ekan. Menga bu kursni berganingiz uchun rahmat kattakon.
+                    Alloh rozi bo'lsin😊`
+        },
+        {
+            author: `Jamshid Xudoyberdiyev`,
+            text: `Darslar sifati yaxshi. Ustozning tushuntirishi ham yaxshi.
+                    Aniq tartib bor darslar o'tilish jarayonida. React kursini hali boshlamadim.`
+        },
+        {
+            author: `Abdulaziz`,
+            text: `Dars zo'r olib borilgan. Qadamma-qadam o'rgatib borilgan. Men ham o'zimga anchagina narsa o'rganib oldim shu darsliklardan. 
+            Sizlarga ham katta rahmat`
+        },
+        {
+            author: `Zokirjon`,
+            text: `Assalomu alaykum. Yaxshi bilimlarga ega bo'ldim bu kurs orqali.
+                    Haqiqatda kursga gap bo'lishi mumkin emas. Kursni maksimal holatda tushuntirib bergan.`
+        },
+        {
+            author: `Dilshodbek`,
+            text: `Kursni to'liq tugata olmadim. O'z ishimdan vaqt ajratib, o'rganmoqchi edim. Eplolmadim, lekin menga yoqdi.
+                    Sizga katta rahmat. Iloji boricha fikrimni bildirib o'taman. Kattakon rahmat.`
+        },
+        {
+            author: `Nozima`,
+            text: `Assalomu alaykum. Avvalo dars uchun katta rahmat.
+                    Darsni mayldalab, hammasini chaynab og'zimizga solib qo'ygansiz qaysidir ma'noda.
+                    Faqat yutish qolgan. Menga yoqqan.`
+        },
+        {
+            author: `Doniyor`,
+            text: `Kurs juda zo'r. Ustozga gap yo'q. 0 dan o'rgangan odam ham 
+            bemalol videolarni ko'rib, qat'iyat bilan o'rgansa, albatta ishlab keta oladi.
+             Sizga ham katta rahmat, ishlaringizga omad 👍👍`
+        },
+        {
+            author: `Asliddin`,
+            text: `Assalomu alaykum. Rahmat avvalambor. Men o'zi Backend sohasidaman, lekin sizning Frontend boʻyicha bergan darslaringiz juda manfaatli boʻldi
+             va hozirda ham ba'zi darslarni takrorlab turaman. Bu kursingiz Full dasturchi boʻlishga ancha yordam qildi. Yana bir bor rahmat! 
+             Taʼlim yoʻlida mehnat qilishdan charchamang, ishlaringizga omad!`
+        },
+        {
+            author: `Guzal Anvarovna`,
+            text: `Rosti menga bu Frontend onlayn kursi juda ham yoqdi. O'zi anchadan buyon o'rganmoqchi bo'lib yurgandim,
+                    ammo mablag'im yo'q edi. Rosti bu kursni grant sifatida taqdim etdingiz, rahmat yana bir bor.
+                    Ustoz ham juda tushunarli o'tgan darsni. Menga yoqdi. Rahmat. Kurs haqiqatda sodda, ajoyib tushuntirilgan.
+                    Bittada tushunish mumkin.`
+        },
+        {
+            author: `JarvisKL`,
+            text: `Men bu kurs uchun sizdan, Fulfil Educationdan juda ham minnatdorman! 
+            Kursni hozircha to'liq yakunlay olmadim, ammo tez kunlarda bu ishonchni oqlab, 
+            chindanda grantga loyiq ekanligimni isbotlayman! Ustoz Og'abek Sultonbayevga ham alohida rahmat, 
+            kurs juda ham zo'r va qiziqarli, manfaatli bo'lgan. Kursni tugatgandan keyin ham katta rejalarim bor. 
+            ReactJS va nextJS ni ham o'rganib, biron-bir IT kompaniyaga stajyor bo'lib yollanmoqchiman.`
+        },
+        {
+            author: `Sabina Muxammadiyeva`,
+            text: `Frontend darslariga keladigan bo'lsak, ular juda ham foydali darslar. Oson, sodda tilda tushuntirilgan. 
+            Ayniqsa, dars o'rtasidagi takrorlash darslari menga juda ham foydali bo'lyapti. Video darslarni 1 martagina emas, 
+            balki qayta-qayta ko'rib tushunmagan joylarimni bilib olyapman. Eng yaxshisi, darslarni xohlagan vaqtda, xohlagan sharoit
+             va joyda tomosha qilishingiz mumkin. Eng yaxshisi qulay. Bunday imkoniyatlarni yaratganlardan alloh rozi bo'lsin☺️`
+        },
+        {
+            author: `Zokir`,
+            text: `Menga kurs juda ham yoqdi ustozga gap boʻlishi mumkinmas. Har bir element, detalga eʼtibor berib
+                    oʻtganlar.
+                    Juda sodda, chiroyli holatda tushuntirish berib oʻtganlar. Men bu kursdan bir narsaga amin boʻldimki
+                    agar
+                    kursga qatnashayotgan har bir tinglovchining oʻzida xohish-istak boʻlsa, bu kursdan bemalol
+                    yetarlicha
+                    bilimga ega boʻladi va kurs tinglovchi yoshlarga maslahatim vaqtlarini bekorga sarflamasdan ustozni
+                    bilimlaridan
+                    imkoni boricha koʻproq foydalanishni masalahat beraman chunki, bu kelajak uchun juda katta
+                    imkoniyatdir.
+                    Bu kursni har qanday tinglovchi bemalol oʻzlashtira oladi, chunki juda zoʻr. Toʻgʻrisi mazza qilib
+                    oʻrganadigan darajada tashkillshtrilgan.
+                    Jamoaga omad tilayman charchamangizlar.`
+        },
+        {
+            author: `Hayotillo Numonov`,
+            text: `Avvalambor Fulfil Educationni tashkil qilgan barcha barchaga o'z minnaddorchiligimni
+                    bildirmoqchiman.
+                    Men bir yil mobaynida ustoz qidirib yurdim. O'zim 1-guruh nogironi bo'lganim uchun ko'cha-ko'ydan,
+                    ya'ni offline tarzda o'rgana olmas edim. Youtubedan katta dasturchilarning tayyorlagan darslarini
+                    ko'rib o'rganmoqchi
+                    bo'ldim, lekin baribir Youtube uchun tayyorlangan video darslar online darslarchalik effekt bermas
+                    ekan.
+                    Va nihoyat Fulfil Education admini bilan tanishib undan Og'abek Sultonboyevni darslarini olganimdan
+                    keyin holat butunlay o'zgardi. Og'abek ham juda chiroyli va tushunarli dars berar ekan. Hayotim
+                    butunlay o'zgardi, IT ga bo'lgan qiziqishim ming chandon ortdi, savollarga va Youtube darsliklarga
+                    hojat qolmadi. Quyida Og'abekning kursidan orttirgan bilimlarim asosida qilgan uyga vazifalarimdan
+                    namunalar yuboraman.
+                    Grant berganingiz esa bu tariflab bo'lmas darjada xursandchiligimni orttirib yubordi. Endi men
+                    darslarda onlayn tarzda kursdoshlarim bilan raqobatlashgan holda o'rganishim mumkin edida.
+                    Inshaolloh IT ni mukammal o'rganib yaxshi natijalar ko'rsataman.
+                    Fulfil ga rahmat! Ishlashdan va bizga o'xshagan ilmga chanqoq, IT ni sevadiganlarga bilim berishdan
+                    charchamanglar.`
+        },
+    ]
+    const courseProjects = [
+        {
+            img: 'img/course-projects/1.png',
+            title: 'EDCT',
+            description: 'Photoshop maketdan HTML va CSS yordamida maket verstka qilinadi'
+        },
+        {
+            img: 'img/course-projects/2.png',
+            title: 'Az-Pharm',
+            description: 'Az-Pharm online dorixonasi uchun landing sahifa'
+        },
+        {
+            img: 'img/course-projects/3.png',
+            title: 'Bella Olonje',
+            description: 'HTML va CSS yordamida verstka qilinadi'
+        },
+        {
+            img: 'img/course-projects/4.png',
+            title: 'Smart English Official',
+            description: `Smart English Official o'quv markazi uchun landing sahifa`
+        },
+        {
+            img: 'img/course-projects/5.png',
+            title: 'Login sahifasi',
+            description: 'Form elementlaridan foydalangan holatda verstka qilinadi'
+        },
+        {
+            img: 'img/course-projects/6.png',
+            title: 'Shiplace',
+            description: 'HTML va CSS yordamida verstka qilinadi'
+        },
+        {
+            img: 'img/course-projects/7.png',
+            title: `Amanatrade platformasining ro'yxatdan o'tish uchun sahifasi`,
+            description: 'Form elementlaridan foydalangan holatda verstka qilinadi'
+        },
+        {
+            img: 'img/course-projects/8.png',
+            title: 'Burger House',
+            description: 'HTML va CSS yordamida verstka qilinadi'
+        },
+        {
+            img: 'img/course-projects/9.png',
+            title: 'Flower Store',
+            description: 'Photoshop maketdan HTML va CSS yordamida maket verstka qilinadi'
+        },
+        {
+            img: 'img/course-projects/10.png',
+            title: 'Yoga',
+            description: 'Photoshop maketdan HTML va CSS yordamida maket verstka qilinadi'
+        },
+        {
+            img: 'img/course-projects/11.png',
+            title: 'Musicology',
+            description: 'Photoshop maketdan HTML va CSS yordamida maket verstka qilinadi'
+        },
+        {
+            img: 'img/course-projects/12.jpg',
+            title: 'Kinolar sayti',
+            description: 'JavaScript yordamida kichik kinolar katalogi sayti'
+        }
+    ]
+
+    const feedbackCardsWrapper = document.querySelector('.feedback__cards')
+    const courseProjectsCardsWrapper = document.querySelector('.course-projects__cards')
+
+    feedbacks.forEach(feedback => {
+        feedbackCardsWrapper.innerHTML += `
+            <div class="feedback__card">
+                <div class="feedback__author">
+                    <div class="feedback__icon">
+                        <img src="img/feedback/chat.svg" alt="man chat icon" loading="lazy">
+                    </div>
+
+                    <div class="feedback__name">${ feedback.author }</div>
+                </div>
+                <p class="feedback__text">${ feedback.text }</p>
+            </div>
+        `
+    })
+
+    courseProjects.forEach(project => {
+        courseProjectsCardsWrapper.innerHTML += `
+            <div class="course-projects__card">
+                <div class="course-projects__img skeleton">
+                    <img src="${ project.img }" alt="${ project.title } image" loading="lazy">
+                </div>
+                <h3 class="course-projects__title">${ project.title }</h3>
+                <p class="course-projects__text">${ project.description }</p>
+            </div>
+        `
+    })
+
     const scrollbarWidth = window.innerWidth - document.body.clientWidth;
     function drawTickerBg() {
         const tickerBg = document.querySelector('.ticker__bg');
