@@ -102,13 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     Va nihoyat Fulfil Education admini bilan tanishib undan Og'abek Sultonboyevni darslarini olganimdan
                     keyin holat butunlay o'zgardi. Og'abek ham juda chiroyli va tushunarli dars berar ekan. Hayotim
                     butunlay o'zgardi, IT ga bo'lgan qiziqishim ming chandon ortdi, savollarga va Youtube darsliklarga
-                    hojat qolmadi. Quyida Og'abekning kursidan orttirgan bilimlarim asosida qilgan uyga vazifalarimdan
-                    namunalar yuboraman.
-                    Grant berganingiz esa bu tariflab bo'lmas darjada xursandchiligimni orttirib yubordi. Endi men
-                    darslarda onlayn tarzda kursdoshlarim bilan raqobatlashgan holda o'rganishim mumkin edida.
-                    Inshaolloh IT ni mukammal o'rganib yaxshi natijalar ko'rsataman.
-                    Fulfil ga rahmat! Ishlashdan va bizga o'xshagan ilmga chanqoq, IT ni sevadiganlarga bilim berishdan
-                    charchamanglar.`
+                    hojat qolmadi.`
         },
     ]
     const courseProjects = [
