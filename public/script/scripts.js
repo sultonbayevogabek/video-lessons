@@ -303,7 +303,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     new Splide('.course-projects__cards', {
             type: 'loop',
-            speed: 400,
+            speed: 1000,
             autoplay: true,
             arrows: false,
             interval: 2000,
