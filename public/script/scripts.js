@@ -305,7 +305,7 @@ document.addEventListener('DOMContentLoaded', () => {
             type: 'loop',
             speed: 400,
             autoplay: true,
-            arrows: true,
+            arrows: false,
             interval: 2000,
             pauseOnHover: true,
             pauseOnFocus: true,
@@ -316,15 +316,14 @@ document.addEventListener('DOMContentLoaded', () => {
             breakpoints: {
                 '1366': {
                     perPage: 3,
-                    arrows: false,
-                    gap: '20px'
+                    arrows: false
                 },
-                '850': {
+                '970': {
                     perPage: 2,
                     gap: '10px',
                     arrows: false,
                 },
-                '690': {
+                '560': {
                     perPage: 1,
                     arrows: false,
                 }
