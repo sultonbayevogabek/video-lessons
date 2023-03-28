@@ -66,7 +66,15 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     const enrollCourseButtons = document.querySelectorAll('.enroll-course'),
-        enrollCourseForm = document.querySelector('.enroll-backdrop')
+        enrollCourseForm = document.querySelector('.enroll-backdrop'),
+        enrollCourseClose = document.querySelector('.enroll-close')
+
+    function closeEnrollCourse() {
+        enrollCourseForm.classList.remove('open');
+        document.body.style.overflow = '';
+        document.body.style.paddingRight = '0';
+    }
+
     enrollCourseButtons.forEach(button => {
         button.addEventListener('click', () => {
             enrollCourseForm.classList.add('open');
@@ -75,17 +83,19 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     })
 
-    enrollCourseForm.addEventListener('click', () => {
-        enrollCourseForm.classList.remove('open');
-        document.body.style.overflow = '';
-        document.body.style.paddingRight = '0';
+    enrollCourseClose.addEventListener('click', (e) => {
+        closeEnrollCourse()
+    })
+
+    enrollCourseForm.addEventListener('click', (e) => {
+        if (e.target.classList.contains('enroll-backdrop')) {
+            closeEnrollCourse()
+        }
     })
 
     document.addEventListener('keyup', e => {
         if (e.key === 'Escape') {
-            enrollCourseForm.classList.remove('open');
-            document.body.style.overflow = '';
-            document.body.style.paddingRight = '0';
+            closeEnrollCourse()
         }
     })
 })
