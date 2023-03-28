@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ]
 
     const feedbackCardsWrapper = document.querySelector('.feedback__cards')
-    const courseProjectsCardsWrapper = document.querySelector('.course-projects__cards')
+    const courseProjectsCardsWrapper = document.querySelector('.splide__list')
 
     feedbacks.forEach(feedback => {
         feedbackCardsWrapper.innerHTML += `
@@ -188,13 +188,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     courseProjects.forEach(project => {
         courseProjectsCardsWrapper.innerHTML += `
-            <div class="course-projects__card">
-                <div class="course-projects__img skeleton">
-                    <img src="${ project.img }" alt="${ project.title } image" loading="lazy">
+            <li class="splide__slide">
+                <div class="course-projects__card">
+                    <div class="course-projects__img skeleton">
+                        <img src="${project.img}" alt="${project.title} image" loading="lazy">
+                    </div>
+                    <h3 class="course-projects__title">${project.title}</h3>
+                    <p class="course-projects__text">${project.description}</p>
                 </div>
-                <h3 class="course-projects__title">${ project.title }</h3>
-                <p class="course-projects__text">${ project.description }</p>
-            </div>
+            </li>
         `
     })
 
@@ -297,4 +299,35 @@ document.addEventListener('DOMContentLoaded', () => {
             closeEnrollCourse()
         }
     })
+
+
+    new Splide('.course-projects__cards', {
+            type: 'loop',
+            speed: 400,
+            autoplay: true,
+            arrows: true,
+            interval: 2000,
+            pauseOnHover: true,
+            pauseOnFocus: true,
+            perPage: 3,
+            perMove: 1,
+            gap: '20px',
+            pagination: false,
+            breakpoints: {
+                '1366': {
+                    perPage: 3,
+                    arrows: false,
+                    gap: '20px'
+                },
+                '850': {
+                    perPage: 2,
+                    gap: '10px',
+                    arrows: false,
+                },
+                '690': {
+                    perPage: 1,
+                    arrows: false,
+                }
+            }
+        }).mount()
 })
