@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             img: 'img/course-projects/2.png',
             title: 'Az-Pharm',
-            description: 'Az-Pharm online dorixonasi uchun landing sahifa'
+            description: 'Az-Pharm onlayn dorixonasi uchun landing sahifa'
         },
         {
             img: 'img/course-projects/3.png',

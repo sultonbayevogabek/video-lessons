@@ -1200,6 +1200,7 @@ img {
         top: 0;
         padding: 0;
         background-color: #fff;
+        box-shadow: 0 0 18px #EAF7F7;
     }
 
     .header__inner {
