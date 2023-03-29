@@ -495,6 +495,24 @@ img {
     overflow: visible;
 }
 
+.splide__arrow {
+    width: 50px;
+    height: 50px;
+    background-color: #3CB27C;
+}
+
+.splide__arrow svg {
+    fill: white;
+}
+
+.splide__arrow--prev {
+    left: -25px;
+}
+
+.splide__arrow--next {
+    right: -25px;
+}
+
 .course-projects__card {
     height: 100%;
     padding: 24px;
@@ -664,17 +682,14 @@ img {
     text-align: center;
 }
 
-.feedback__cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px 20px;
-}
-
 .feedback__card {
+    height: 100%;
+    max-height: 300px;
     padding: 18px;
     background-color: #FFFFFF;
     box-shadow: 0 0 18px #EAF7F7;
     border-radius: 18px;
+    overflow: auto;
 }
 
 .feedback__author {
@@ -1318,10 +1333,6 @@ img {
     .container {
         max-width: 720px;
     }
-
-    .feedback__cards {
-        grid-template-columns: 1fr 1fr;
-    }
 }
 
 @media screen and (max-width: 720px) {
@@ -1405,10 +1416,6 @@ img {
         margin-bottom: 12px;
     }
 
-    .feedback__cards {
-        grid-gap: 12px;
-    }
-
     .feedback__card {
         padding: 12px;
     }
@@ -1443,10 +1450,6 @@ img {
 }
 
 @media screen and (max-width: 560px) {
-    .feedback__cards {
-        grid-template-columns: 1fr;
-    }
-
     .more__li {
         align-items: flex-start;
     }

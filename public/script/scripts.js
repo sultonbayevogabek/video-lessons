@@ -78,24 +78,24 @@ document.addEventListener('DOMContentLoaded', () => {
             author: `Zokir`,
             text: `Menga kurs juda ham yoqdi ustozga gap boʻlishi mumkinmas. Har bir element, detalga eʼtibor berib
                     oʻtganlar.
-                    Juda sodda, chiroyli holatda tushuntirish berib oʻtganlar. Men bu kursdan bir narsaga amin boʻldimki
+                    Juda sodda, chiroyli holatda tushuntirish berib oʻtganlar. Men bu kursdan bir narsaga amin boʻldimki,
                     agar
                     kursga qatnashayotgan har bir tinglovchining oʻzida xohish-istak boʻlsa, bu kursdan bemalol
                     yetarlicha
-                    bilimga ega boʻladi va kurs tinglovchi yoshlarga maslahatim vaqtlarini bekorga sarflamasdan ustozni
+                    bilimga ega boʻladi va kurs tinglovchi yoshlarga maslahatim vaqtlarini bekorga sarflamasdan, ustozni
                     bilimlaridan
                     imkoni boricha koʻproq foydalanishni masalahat beraman chunki, bu kelajak uchun juda katta
                     imkoniyatdir.
                     Bu kursni har qanday tinglovchi bemalol oʻzlashtira oladi, chunki juda zoʻr. Toʻgʻrisi mazza qilib
-                    oʻrganadigan darajada tashkillshtrilgan.
-                    Jamoaga omad tilayman charchamangizlar.`
+                    oʻrganadigan darajada tashkillashtrilgan.
+                    Jamoaga omad tilayman. Charchamangizlar.`
         },
         {
             author: `Hayotillo Numonov`,
-            text: `Avvalambor Fulfil Educationni tashkil qilgan barcha barchaga o'z minnaddorchiligimni
+            text: `Avvalambor Fulfil Educationni tashkil qilgan barcha-barchaga o'z minnatdorchiligimni
                     bildirmoqchiman.
                     Men bir yil mobaynida ustoz qidirib yurdim. O'zim 1-guruh nogironi bo'lganim uchun ko'cha-ko'ydan,
-                    ya'ni offline tarzda o'rgana olmas edim. Youtubedan katta dasturchilarning tayyorlagan darslarini
+                    ya'ni oflayn tarzda o'rgana olmas edim. Youtubedan katta dasturchilarning tayyorlagan darslarini
                     ko'rib o'rganmoqchi
                     bo'ldim, lekin baribir Youtube uchun tayyorlangan video darslar online darslarchalik effekt bermas
                     ekan.
@@ -168,21 +168,23 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     ]
 
-    const feedbackCardsWrapper = document.querySelector('.feedback__cards')
-    const courseProjectsCardsWrapper = document.querySelector('.splide__list')
+    const feedbackCardsWrapper = document.querySelector('.feedback__slider .splide__list')
+    const courseProjectsCardsWrapper = document.querySelector('.course-projects__slider .splide__list')
 
     feedbacks.forEach(feedback => {
         feedbackCardsWrapper.innerHTML += `
+          <li class="splide__slide">
             <div class="feedback__card">
                 <div class="feedback__author">
                     <div class="feedback__icon">
                         <img src="img/feedback/chat.svg" alt="man chat icon" loading="lazy">
                     </div>
 
-                    <div class="feedback__name">${ feedback.author }</div>
+                    <div class="feedback__name">${feedback.author}</div>
                 </div>
-                <p class="feedback__text">${ feedback.text }</p>
+                <p class="feedback__text">${feedback.text}</p>
             </div>
+          </li>
         `
     })
 
@@ -301,11 +303,11 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
 
-    new Splide('.course-projects__cards', {
+    new Splide('.course-projects__slider', {
             type: 'loop',
             speed: 1000,
             autoplay: true,
-            arrows: false,
+            arrows: true,
             interval: 2000,
             pauseOnHover: true,
             pauseOnFocus: true,
@@ -329,4 +331,33 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
         }).mount()
+
+    new Splide('.feedback__slider', {
+        type: 'loop',
+        speed: 1000,
+        autoplay: true,
+        arrows: true,
+        interval: 2000,
+        pauseOnHover: true,
+        pauseOnFocus: true,
+        perPage: 3,
+        perMove: 1,
+        gap: '20px',
+        pagination: false,
+        breakpoints: {
+            '1366': {
+                perPage: 3,
+                arrows: false
+            },
+            '970': {
+                perPage: 2,
+                gap: '10px',
+                arrows: false,
+            },
+            '560': {
+                perPage: 1,
+                arrows: false,
+            }
+        }
+    }).mount()
 })
