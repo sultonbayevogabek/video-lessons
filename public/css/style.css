@@ -491,13 +491,12 @@ img {
     color: #3CB27F;
 }
 
-.course-projects__cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+.splide__track {
+    overflow: visible;
 }
 
 .course-projects__card {
+    height: 100%;
     padding: 24px;
     background-color: #FFFFFF;
     box-shadow: 0 0 18px #EAF7F7;
@@ -1320,10 +1319,6 @@ img {
         max-width: 720px;
     }
 
-    .course-projects__cards {
-        grid-template-columns: 1fr 1fr;
-    }
-
     .feedback__cards {
         grid-template-columns: 1fr 1fr;
     }
@@ -1383,10 +1378,6 @@ img {
 
     .accordion__item:not(:last-child) {
         margin-bottom: 12px;
-    }
-
-    .course-projects__cards {
-        grid-gap: 12px;
     }
 
     .course-projects__card {
@@ -1452,10 +1443,6 @@ img {
 }
 
 @media screen and (max-width: 560px) {
-    .course-projects__cards {
-        grid-template-columns: 1fr;
-    }
-
     .feedback__cards {
         grid-template-columns: 1fr;
     }
