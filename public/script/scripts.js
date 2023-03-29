@@ -49,21 +49,16 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             author: `Asliddin`,
             text: `Assalomu alaykum. Rahmat avvalambor. Men o'zi Backend sohasidaman, lekin sizning Frontend boʻyicha bergan darslaringiz juda manfaatli boʻldi
-             va hozirda ham ba'zi darslarni takrorlab turaman. Bu kursingiz Full dasturchi boʻlishga ancha yordam qildi. Yana bir bor rahmat! 
-             Taʼlim yoʻlida mehnat qilishdan charchamang, ishlaringizga omad!`
+             va hozirda ham ba'zi darslarni takrorlab turaman.`
         },
         {
             author: `Guzal Anvarovna`,
             text: `Rosti menga bu Frontend onlayn kursi juda ham yoqdi. O'zi anchadan buyon o'rganmoqchi bo'lib yurgandim,
-                    ammo mablag'im yo'q edi. Rosti bu kursni grant sifatida taqdim etdingiz, rahmat yana bir bor.
-                    Ustoz ham juda tushunarli o'tgan darsni. Menga yoqdi. Rahmat. Kurs haqiqatda sodda, ajoyib tushuntirilgan.
-                    Bittada tushunish mumkin.`
+                    ammo mablag'im yo'q edi. Rosti bu kursni grant sifatida taqdim etdingiz, rahmat yana bir bor.`
         },
         {
             author: `JarvisKL`,
-            text: `Men bu kurs uchun sizdan, Fulfil Educationdan juda ham minnatdorman! 
-            Kursni hozircha to'liq yakunlay olmadim, ammo tez kunlarda bu ishonchni oqlab, 
-            chindanda grantga loyiq ekanligimni isbotlayman! Ustoz Og'abek Sultonbayevga ham alohida rahmat, 
+            text: `Ustoz Og'abek Sultonbayevga alohida rahmat, 
             kurs juda ham zo'r va qiziqarli, manfaatli bo'lgan. Kursni tugatgandan keyin ham katta rejalarim bor. 
             ReactJS va nextJS ni ham o'rganib, biron-bir IT kompaniyaga stajyor bo'lib yollanmoqchiman.`
         },
@@ -71,8 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
             author: `Sabina Muxammadiyeva`,
             text: `Frontend darslariga keladigan bo'lsak, ular juda ham foydali darslar. Oson, sodda tilda tushuntirilgan. 
             Ayniqsa, dars o'rtasidagi takrorlash darslari menga juda ham foydali bo'lyapti. Video darslarni 1 martagina emas, 
-            balki qayta-qayta ko'rib tushunmagan joylarimni bilib olyapman. Eng yaxshisi, darslarni xohlagan vaqtda, xohlagan sharoit
-             va joyda tomosha qilishingiz mumkin. Eng yaxshisi qulay. Bunday imkoniyatlarni yaratganlardan alloh rozi bo'lsin☺️`
+            balki qayta-qayta ko'ryapman️`
         },
         {
             author: `Zokir`,
@@ -82,25 +76,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     agar
                     kursga qatnashayotgan har bir tinglovchining oʻzida xohish-istak boʻlsa, bu kursdan bemalol
                     yetarlicha
-                    bilimga ega boʻladi va kurs tinglovchi yoshlarga maslahatim vaqtlarini bekorga sarflamasdan, ustozni
-                    bilimlaridan
-                    imkoni boricha koʻproq foydalanishni masalahat beraman chunki, bu kelajak uchun juda katta
-                    imkoniyatdir.
-                    Bu kursni har qanday tinglovchi bemalol oʻzlashtira oladi, chunki juda zoʻr. Toʻgʻrisi mazza qilib
-                    oʻrganadigan darajada tashkillashtrilgan.
-                    Jamoaga omad tilayman. Charchamangizlar.`
+                    bilimga ega boʻladi.`
         },
         {
             author: `Hayotillo Numonov`,
-            text: `Avvalambor Fulfil Educationni tashkil qilgan barcha-barchaga o'z minnatdorchiligimni
-                    bildirmoqchiman.
-                    Men bir yil mobaynida ustoz qidirib yurdim. O'zim 1-guruh nogironi bo'lganim uchun ko'cha-ko'ydan,
-                    ya'ni oflayn tarzda o'rgana olmas edim. Youtubedan katta dasturchilarning tayyorlagan darslarini
-                    ko'rib o'rganmoqchi
-                    bo'ldim, lekin baribir Youtube uchun tayyorlangan video darslar online darslarchalik effekt bermas
-                    ekan.
-                    Va nihoyat Fulfil Education admini bilan tanishib undan Og'abek Sultonboyevni darslarini olganimdan
-                    keyin holat butunlay o'zgardi. Og'abek ham juda chiroyli va tushunarli dars berar ekan. Hayotim
+            text: `Fulfil Education admini bilan tanishib undan Og'abek Sultonboyevni darslarini olganimdan
+                    keyin hayotim butunlay o'zgardi. Og'abek ham juda chiroyli va tushunarli dars berar ekan. Hayotim
                     butunlay o'zgardi, IT ga bo'lgan qiziqishim ming chandon ortdi, savollarga va Youtube darsliklarga
                     hojat qolmadi.`
         },
