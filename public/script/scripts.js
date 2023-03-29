@@ -267,7 +267,7 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     })
 
-    enrollCourseClose.addEventListener('click', (e) => {
+    enrollCourseClose.addEventListener('click', () => {
         closeEnrollCourse()
     })
 
