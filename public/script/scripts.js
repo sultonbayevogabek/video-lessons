@@ -298,8 +298,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pagination: false,
             breakpoints: {
                 '1366': {
-                    perPage: 3,
-                    arrows: false
+                    perPage: 3
                 },
                 '970': {
                     perPage: 2,
@@ -327,8 +326,7 @@ document.addEventListener('DOMContentLoaded', () => {
         pagination: false,
         breakpoints: {
             '1366': {
-                perPage: 3,
-                arrows: false
+                perPage: 3
             },
             '970': {
                 perPage: 2,
@@ -342,3 +340,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }).mount()
 })
+
